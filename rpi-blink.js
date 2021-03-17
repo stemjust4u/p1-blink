@@ -1,3 +1,6 @@
+// Install onoff with 
+// $ npm install onoff 
+
 var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
 var LED = new Gpio(26, 'out'); //use GPIO BCM number (Braodcom), and specify that it is output
 var blinkInterval = setInterval(blinkLED, 250); //run the blinkLED function every 250ms
