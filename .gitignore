@@ -259,3 +259,4 @@ node_modules/onoff/integration-test/run-tests
 node_modules/onoff/integration-test/wait-for-interrupt.js
 node_modules/onoff/integration-test/wait-for-many-interrupts.js
 package-lock.json
+workspace.code-workspace
