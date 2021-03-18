@@ -16,7 +16,7 @@ function blinkLED() {
 function endBlink() { 
   clearInterval(blinkInterval);   // Stop blink intervals
   LED.writeSync(0);               // Turn LED off
-  LED.unexport();                 // Unexport GPIO to free resources
+  LED.unexport();                 // Free resources
 }
 
 
