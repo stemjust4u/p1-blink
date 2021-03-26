@@ -1,4 +1,4 @@
-![https://stemjust4u.com/](images/sj4u-logo.png "https://stemjust4u.com/")
+# [STEM Just 4 U Home Page](https://stemjust4u.com/)
 # This project shows multiple methods to turn an LED on/off with Raspberry Pi and ESP32.
 
 [Link to Project Web Site](https://stemjust4u.com/)
