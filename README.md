@@ -1,7 +1,7 @@
 # [STEM Just 4 U Home Page](https://stemjust4u.com/)
 # This project shows multiple methods to turn an LED on/off with Raspberry Pi and ESP32.
 
-[Link to Project Web Site](https://stemjust4u.com/)
+[Link to Project Web Site](https://stemjust4u.com/p1-led-blink)
 ## Materials 
 * LED (1.7-3V/20mA LED)
 * Resistor (75-100ohm) - controls current going to LED
