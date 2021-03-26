@@ -16,7 +16,7 @@ Voltage drop for a typical LED will be around 1.8V and can only handle around 20
 ![fritzing](images/fritzing.png "Circuit")
 ![falstad](images/falstad.png "Circuit")
 
-Kirchoff Voltage Law (KVL) - Voltage drop across resistor and LED should equal sum of input Voltage.
+>Kirchoff Voltage Law (KVL) - Voltage drop across resistor and LED should equal sum of input Voltage.
 Vs = Vled + Vresistor
 
 
@@ -27,15 +27,15 @@ Iled = 20mA
 
 So Vresistor = 3.3V - 1.8V = 1.5V
 
-We want to limit the current to <20mA (LED datasheet).
-Kirchoff Current Law (KCL) - Our circuit is a single path so current will be equal across the LED and resistor. Iled = Iresistor (20mA)
+We want to limit the current to <20mA (LED datasheet).  
+>Kirchoff Current Law (KCL) - Our circuit is a single path so current will be equal across the LED and resistor. Iled = Iresistor (20mA)
 
 Ohms Law for the resistor
 R = V/I = 1.5V/.02A = 75ohm (I only had a 100ohm resist so my diagrams show 100ohm, resulting in a lower current, 15mA, and a slightly dimmer LED)
 
 Many STEM project LEDs have ~3V drop. For these the math comes out to a nearly 0 ohm resistor and you could leave it out.
 
-A quick check that your LED is working can be done by connecting it to the 3.3V pin on your Pi.
+>A quick check that your LED is working can be done by connecting it to the 3.3V pin on your Pi.
 
 # Connecting the LED to Raspberry Pi
 A great resource for Raspberry Pi pins is pinout.xyz. You can use a breadboard or connect the LED/resistor directly with jumper wires.
