@@ -40,21 +40,40 @@ Many STEM project LEDs have ~3V drop. For these the math comes out to a nearly 0
 >A quick check that your LED is working can be done by connecting it to the 3.3V pin on your Pi.
 
 # Connecting the LED to Raspberry Pi
-A great resource for Raspberry Pi pins is pinout.xyz. You can use a breadboard or connect the LED/resistor directly with jumper wires.
+A great resource for Raspberry Pi pins is pinout.xyz.   
+(or type command $ pinout on your raspberry pi)  
+You can use a breadboard or connect the LED/resistor directly with jumper wires.
 For my setup I used two LEDs and GPIO10 and 26. (along with GRND) Start with a single LED and get it working first.
 
 # Connecting LED to esp32
 On the ESP32 I used the internal LED (pin2). Although you could connect an external LED and just change the pin.  
 You load the upython script on to the esp32 as /main.py  [Directions using Thonny](https://stemjust4u.com/esp32-esp8266)
 
-# Initial Code (single LED)
+# Code (single LED)
 ​​For initial LED blink code I tried out a couple Python libraries and even JavaScript. 
 * RPi - Python with RPi.GPIO
 * RPi - Python with gpiozero
 * RPi - JavaScript
 * esp32 - uPython
 
-# If you want to practice some JavaScript (used for node-red) you will need node.js installed.
+Note - the github/venve/vscode steps aren't required. You can install the Python libraries in your home directory, create the Python script in a text editor and execute from command line.
+
+1. Initialize an empty github repository with a README and .gitignore (python)
+2. Go to RPi directory and clone  
+`$ git clone git@github.com:user/repo.git` (ssh copied from github)
+3. ​​Create virtual env  
+`$ python3 -m venv .venv`  
+`$ source .venv/bin/activate`
+4. Install packages  
+`(.venv)$ pip3 install RPi.GPIO`  
+`(.venv)$ pip3 install gpiozero`  
+
+# **Now you can start creating the beginner code to blink the led.**
+See /gpiozero-blink.py (uses gpiozero)  
+See /rpigpio/rpigpio-blink.py (uses RPi.GPIO)
+
+---
+## JavaScript you will need node.js installed.
 I followed the w3schools javascript tutorial  
 Install onoff with  
 `$ npm install onoff`  
