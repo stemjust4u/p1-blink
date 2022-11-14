@@ -73,7 +73,8 @@ See /gpiozero-blink.py (uses gpiozero)
 See /rpigpio/rpigpio-blink.py (uses RPi.GPIO)
 
 ---
-## JavaScript you will need node.js installed.
+## Optional JavaScript method  
+For JavaScript you will need node.js installed.
 I followed the w3schools javascript tutorial  
 Install onoff with  
 `$ npm install onoff`  
